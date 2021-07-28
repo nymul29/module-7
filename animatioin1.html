@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes emon {
+            0%{
+                left:0%;
+                top: 0%;
+                background-color: yellow;
+            }
+            50%{
+                left: 35%;
+                top: 80px;
+                background-color:crimson;
+            }
+            100%{
+                left: 70%;
+                top: 0%;
+                background-color: purple;
+            }
+        }
+        .stage{
+            width:80%;
+            height: 200px;
+            background-color:lightslategray;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color:red;
+            position:relative;
+        }
+        .stage:hover .ball{
+            animation: emon 3s ease-in-out  1s 5 alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+</html>
